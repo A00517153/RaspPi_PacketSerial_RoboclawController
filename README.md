@@ -13,14 +13,21 @@ https://github.com/basicmicro/raspberry_pi_packet_serial
 
 
 Required Python Libraries:
+
 -> serial (pyserial)
+
 -> ros
 
 Required ROS Packages:
+
 -> rospy
+
 -> sensor_msgs
+
 -> std_msgs
+
 -> geometry_msgs
+
 -> joy
 
 Run tank_node.py
