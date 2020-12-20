@@ -13,5 +13,4 @@ https://github.com/basicmicro/raspberry_pi_packet_serial
 
 
 Required Python Libraries:
-
 -serial (pyserial)
