@@ -760,11 +760,11 @@ class Roboclaw:
 	def ReadISpeedM2(self,address):
 		return self._read4_1(address,self.Cmd.GETM2ISPEED)
 
-	def DutyM1(self,address,val):
+	"""def DutyM1(self,address,val):
 		return self._simplFunctionS2(address,self.Cmd.M1DUTY,val)
 
 	def DutyM2(self,address,val):
-		return self._simplFunctionS2(address,self.Cmd.M2DUTY,val)
+		return self._simplFunctionS2(address,self.Cmd.M2DUTY,val)"""
 
 	def DutyM1M2(self,address,m1,m2):
 		return self._writeS2S2(address,self.Cmd.MIXEDDUTY,m1,m2)

@@ -4,7 +4,8 @@ from time import sleep
 if __name__ == "__main__":
     
     address = 0x80
-    roboclaw = Roboclaw("/dev/ttyS0", 38400)
+    port = "/dev/ttyS0"
+    roboclaw = Roboclaw(port, 38400)
     roboclaw.Open()
     
     while True:
