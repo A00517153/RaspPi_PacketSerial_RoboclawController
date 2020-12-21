@@ -37,4 +37,4 @@ Needs to be running control.py for topic comunication, or some script that sends
 This is only a First and Second Test version, changes or elimination of the proyect may happen. Has yet to be tested.
 
 Connection Circuit Master-Slave Diagram and Info:
-
+![alt text](https://github.com/A00517153/RaspPi_PacketSerial_RoboclawController/blob/main/image.jpg?raw=true)
