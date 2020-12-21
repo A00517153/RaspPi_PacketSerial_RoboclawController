@@ -30,8 +30,11 @@ Required ROS Packages:
 
 -> joy
 
-Run tank_node.py
+Run tank_node.py or motors_node.py for testing purposes.
 
-Needs to be running control.py for topic comunication.
+Needs to be running control.py for topic comunication, or some script that sends a Float32 value to the '/Motors/left_vel' and '/Motors/right_vel' in ROS.
 
-This is only a First Test version, changes or elimination of the proyect may happen.
+This is only a First and Second Test version, changes or elimination of the proyect may happen. Has yet to be tested.
+
+Connection Circuit Master-Slave Diagram and Info:
+
