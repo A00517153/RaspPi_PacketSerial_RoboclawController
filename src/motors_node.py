@@ -24,7 +24,7 @@ class motors_node:
         rospy.Subscriber('/Motors/left_vel',Float32,self.left_callback) #Suscriber function to left joystick Topic.
         rospy.Subscriber('/Motors/right_vel',Float32,self.right_callback) #Suscriber funcion to right joystick Topic.
 
-        r = rospy.Rate(1000)
+        r = rospy.Rate(200)
 
         while not rospy.is_shutdown():
             self.tankDrive(self.speed)
