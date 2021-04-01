@@ -13,28 +13,22 @@ https://github.com/basicmicro/raspberry_pi_packet_serial
 
 
 Required Python Libraries:
-
--> serial (pyserial)
-
--> ros
+- serial (pyserial)
+- ros
+- os
+- time
+- numpy
 
 Required ROS Packages:
+- rospy
+- sensor_msgs
+- joy
 
--> rospy
+In case of testing or using, run *motors_node.py*, for testing, please modify the lines 121 - 156 acording to the new configuration you are going to use.
 
--> sensor_msgs
+This version doesn't require to have running any other topic for comunication, with the exception of 'Joy/joy', which will let us get directly the values without the need of other program running.
 
--> std_msgs
-
--> geometry_msgs
-
--> joy
-
-Run tank_node.py or motors_node.py for testing purposes.
-
-Needs to be running control.py for topic comunication, or some script that sends a Float32 value to the '/Motors/left_vel' and '/Motors/right_vel' in ROS.
-
-This is only a First and Second Test version, changes or elimination of the proyect may happen. Has yet to be tested.
+This is still a alpha version, test and developments are still being made. In this version is reintegrated an old code with the purpose of not needing to give the permits to the port, it may be unestable, because it hasn't been tested again, nor have any documentation on how it worked.
 
 Connection Circuit Master-Slave Diagram and Info:
 ![alt text](https://github.com/A00517153/RaspPi_PacketSerial_RoboclawController/blob/main/image.jpg?raw=true)

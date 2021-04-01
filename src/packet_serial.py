@@ -4,8 +4,8 @@ from time import sleep
 if __name__ == "__main__":
     
     address = 0x80
-    port = "/dev/ttyS0"
-    roboclaw = Roboclaw(port, 38400)
+    port = "/dev/ttyACM0"
+    roboclaw = Roboclaw(port, 115200)
     roboclaw.Open()
     
     while True:
@@ -15,10 +15,10 @@ if __name__ == "__main__":
         roboclaw.ForwardM1(address,0)
         sleep(2)
         
-        roboclaw.ForwardM2(address, 64)
-        sleep(2)
-        roboclaw.ForwardM2(address,0)
-        sleep(2)
+        # roboclaw.ForwardM2(address, 64)
+        # sleep(2)
+        # roboclaw.ForwardM2(address,0)
+        # sleep(2)
     
     
 
